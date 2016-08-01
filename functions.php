@@ -104,7 +104,7 @@ add_action( 'widgets_init', 'roman_cavalry_widgets_init' );
 function roman_cavalry_scripts() {  
 	wp_enqueue_style( 'roman-cavalry-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'roman-cavalry-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'roman-cavalry-js', get_template_directory_uri() . '/js/dist/scripts.min.js', array('jquery'), '1.0.0', true );
 
 	wp_enqueue_script( 'roman-cavalry-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
