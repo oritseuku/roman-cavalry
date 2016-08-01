@@ -1,0 +1,21 @@
+{
+  "name": "roman-cavalry",
+  "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
+  "main": "gulpfile.js",
+  "authors": [
+    "Oritse Justin Uku"
+  ],
+  "license": "ISC",
+  "homepage": "oritseuku.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "latest",
+    "fontawesome": "latest"
+  }
+}
