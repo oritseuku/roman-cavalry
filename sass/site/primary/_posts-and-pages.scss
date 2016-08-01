@@ -26,3 +26,11 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+  .content-area {
+    @include make-md-column(9);
+  }
+ 
+  .widget-area {
+    @include make-md-column(3);
+  }
