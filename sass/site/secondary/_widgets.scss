@@ -5,4 +5,12 @@
 	select {
 		max-width: 100%;
 	}
+    
+    ul {
+        word-wrap: break-word;
+    }
+    &.widget_search {
+        border: none;
+        box-shadow: none;
+    }
 }

@@ -8072,6 +8072,11 @@ button.close {
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
+  .widget ul {
+    word-wrap: break-word; }
+  .widget.widget_search {
+    border: none;
+    box-shadow: none; }
 
 /*--------------------------------------------------------------
 # Content
