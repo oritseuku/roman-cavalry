@@ -27,6 +27,34 @@
 	margin: 0 0 1.5em;
 }
 
+.entry-meta,
+.entry-footer {
+    font-size: 12px;
+    
+    .fa {
+        color: $gray-light;
+        margin-right: 2px;
+    }
+    
+    span {
+        margin-right: 15px;
+        display: inline-block;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    
+    a {
+        color: $gray-light;
+        
+        &:hover {
+            text-decoration: none;
+            color: $gray-dark;
+        }
+    }
+}
+
   .content-area {
     @include make-md-column(9);
   }
