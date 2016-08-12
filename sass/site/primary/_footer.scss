@@ -1,7 +1,8 @@
-footer {
+.site-footer {
     background: $gray-darker;
+    
+    .site-info {
+        margin: 20px 0;
+    }
 }
 
-.site-info {
-    margin: 20px 0;
-}
