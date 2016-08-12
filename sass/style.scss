@@ -32,6 +32,7 @@ $fa-font-path: "./fonts";
 # Accessibility
 # Alignments
 # Clearings
+# Posts Navigation
 # Widgets
 # Content
 	## Posts and pages
@@ -57,6 +58,11 @@ $fa-font-path: "./fonts";
 # Clearings
 --------------------------------------------------------------*/
 @import "modules/clearings";
+
+/*--------------------------------------------------------------
+# Posts Navigation
+--------------------------------------------------------------*/
+@import "modules/posts-navigation";
 
 /*--------------------------------------------------------------
 # Widgets

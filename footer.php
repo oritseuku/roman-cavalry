@@ -15,11 +15,13 @@
     </div><!-- container -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'roman-cavalry' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'roman-cavalry' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'roman-cavalry' ), 'roman-cavalry', '<a href="http://oritseuku.com" rel="designer">Oritse Justin Uku</a>' ); ?>
-		</div><!-- .site-info -->
+        <div class="container">
+            <div class="site-info">
+                <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'roman-cavalry' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'roman-cavalry' ), 'WordPress' ); ?></a>
+                <span class="sep"> | </span>
+                <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'roman-cavalry' ), 'roman-cavalry', '<a href="http://oritseuku.com" rel="designer">Oritse Justin Uku</a>' ); ?>
+            </div><!-- .site-info -->
+        </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
