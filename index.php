@@ -14,19 +14,32 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+<?php $bg_img = roman_cavalry_option('hp-banner-img', false, 'url');
+
+$bg_url = '';
+if ($bg_img != '') {
+$bg_url = "background-image: url('" . $bg_img . "');";
+}
+?>
+
+    <div class="pagewrap" style="<?php echo $bg_url; ?>">
+        <header>
+            <?php if (roman_cavalry_option('hp-banner-title', 'Header Text') != '') {
+                echo '<h1>', (roman_cavalry_option('hp-banner-title')), '</h1>';
+} ?> 
+        </header>	    
+    </div><!-- /headerwrap -->
+
+<div class="container">
+    <div class="row">
+
+	<div id="primary" class="col-md-9 col-lg-9">
 		<main id="main" class="site-main" role="main">
 
 		<?php
-		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+		if ( have_posts() ) : ?>
 
 			<?php
-			endif;
 
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();

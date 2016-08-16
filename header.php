@@ -26,11 +26,11 @@
 
 	<header id="masthead" class="site-header" role="banner">
     <nav role="navigation" id="navbar-main">
-      <div class="navbar navbar-inverse navbar-static-top">
+      <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
           <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -60,5 +60,4 @@
     </nav>
   </header><!-- #masthead -->
     
-    <div class="container">
-	   <div id="content" class="site-content row">
+	<div id="content" class="site-content">

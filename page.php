@@ -14,7 +14,32 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+<?php $bg_img = rwmb_meta('roman_cavalry_banner_image', 'type=image');
+
+$bg_url = '';
+
+if (count($bg_img) > '0') {
+    foreach ($bg_img as $img) {
+        $bg = "{$img['full_url']}";
+        $bg_url = "background-image: url('" . $bg . "');";
+    }
+}
+?>
+
+    <div class="pagewrap" style="<?php echo $bg_url; ?>">
+        <header>
+            <?php if (rwmb_meta('roman_cavalry_banner_text') != '') {
+                echo '<h1>', rwmb_meta('roman_cavalry_banner_text'), '</h1>';
+            } else {
+                the_title( '<h1 class="entry-title">', '</h1>' );
+            } ?>
+        </header>
+    </div><!-- /headerwrap -->
+
+<div class="container">
+    <div class="row">
+
+	<div id="primary" class="col-md-9 col-lg-9">
 		<main id="main" class="site-main" role="main">
 
 			<?php

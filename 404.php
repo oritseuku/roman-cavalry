@@ -9,7 +9,16 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+    <div class="pagewrap">
+        <header>
+            <h1>404</h1> 
+        </header>	    
+    </div><!-- /headerwrap -->
+
+<div class="container">
+    <div class="row">
+
+	<div id="primary" class="col-md-9 col-lg-9">
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">

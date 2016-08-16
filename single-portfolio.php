@@ -34,13 +34,13 @@ if (count($bg_img) > '0') {
 <div class="container">
     <div class="row">
 
-	<div id="primary" class="col-md-9 col-lg-9">
+	<div id="primary" class="col-lg-12">
 		<main id="main" class="site-main" role="main">
 
 		<?php
 		while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/content', get_post_format() );
+			get_template_part( 'template-parts/content', 'single-portfolio' );
 
 			the_post_navigation();
 
@@ -56,5 +56,4 @@ if (count($bg_img) > '0') {
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

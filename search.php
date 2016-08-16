@@ -9,7 +9,16 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+    <div class="pagewrap">
+        <header>
+            <h1>Search Results</h1> 
+        </header>	    
+    </div><!-- /headerwrap -->
+
+<div class="container">
+    <div class="row">
+
+	<section id="primary" class="col-md-9 col-lg-9">
 		<main id="main" class="site-main" role="main">
 
 		<?php
