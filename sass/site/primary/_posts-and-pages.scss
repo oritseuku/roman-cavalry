@@ -55,11 +55,14 @@
     }
 }
 
-  .content-area {
-      word-break: break-word;
+.content-area {
+    word-break: break-word;
     @include make-md-column(9);
-  }
- 
-  .widget-area {
+}
+
+.widget-area {
     @include make-md-column(3);
-  }
+}
+img.wp-post-image {
+    margin-bottom: 20px;
+}

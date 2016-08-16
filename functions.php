@@ -141,3 +141,19 @@ require get_template_directory() . '/inc/jetpack.php';
  * Bootstrap Menu - Custom Walker
  */
 require get_template_directory() . '/inc/bootstrap-walker.php';
+
+/**
+ * Plugin Activation.
+ */
+require get_template_directory() . '/inc/plugin-activation.php';
+
+/**
+ * Meta Boxes.
+ */
+require get_template_directory() . '/inc/meta-box.php';
+
+/**
+ * Redux Theme Options.
+ */
+require get_template_directory() . '/inc/roman-cavalry-options.php';
+require get_template_directory() . '/inc/theme-options.php';

@@ -8829,6 +8829,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       float: left;
       width: 25%; } }
 
+img.wp-post-image {
+  margin-bottom: 20px; }
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
@@ -8852,6 +8855,26 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background: #222222; }
   .site-footer .site-info {
     margin: 20px 0; }
+
+.footerwrap .container {
+  margin: auto 0; }
+
+.footerLeft, .footerRight a {
+  color: #e6e6e6;
+  font-size: 1.125em; }
+
+.footerLeft {
+  text-align: left; }
+
+.footerRight {
+  text-align: right;
+  float: right; }
+  .footerRight a {
+    margin-right: 1.25em; }
+    .footerRight a:hover {
+      color: #ad0b22; }
+    .footerRight a:last-child {
+      margin-right: none; }
 
 /*--------------------------------------------------------------
 ## Custom Post Types

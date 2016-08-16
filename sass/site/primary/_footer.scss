@@ -6,3 +6,33 @@
     }
 }
 
+.footerwrap .container {
+    margin: auto 0;
+}
+
+.footerLeft, .footerRight a {
+    color: $color__background-button;
+    font-size: 1.125em;
+}
+
+.footerLeft {
+    text-align: left;
+}
+
+.footerRight {
+    text-align: right;
+    float: right;
+    
+    a {
+        margin-right: 1.25em;
+        
+        &:hover {
+            color: $color__brand;
+        }
+        
+        &:last-child {
+            margin-right: none;
+        }
+    }
+}
+
