@@ -43,6 +43,10 @@ $bg_url = "background-image: url('" . $bg_img . "');";
  
 				<div class="row">
                     <div class="services">
+                        
+                        <?php if (roman_cavalry_option('service-content') != '') {
+                            echo roman_cavalry_option('service-content');
+                        } ?>
  
 					<!-- the loop -->
 					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>

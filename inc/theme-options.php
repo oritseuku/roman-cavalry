@@ -281,7 +281,36 @@
                     ),
                 );
  
-               
+  //Service Section
+                 $this->sections[] = array(
+                    'icon'      => 'el-icon-photo',
+                    'title'     => __('Service', 'roman_cavalry'),
+                    'fields'    => array(
+                        array( 
+                            'title'     => __( 'Banner Title', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Text for the banner title', 'roman_cavalry' ),
+                            'id'        => 'service-banner-title',
+                            'default'   => 'Service Banner Title',
+                            'type'      => 'text',
+                        ),
+                        
+                        array( 
+                            'title'     => __( 'Banner Image', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Image for Service Banner', 'roman_cavalry' ),
+                            'id'        => 'service-banner-img',
+                            'type'      => 'media',
+                            'url'      => true,
+                        ),
+                        array( 
+                            'title'     => __( 'Services Content', 'roman_cavalry' ),
+                            'subtitle'  => __( 'The content above services', 'roman_cavalry' ),
+                            'id'        => 'service-content',
+                            'type'      => 'editor',
+                            'default'   => '<h3 class="text-center">Services We Offer </h3>
+						<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquam mattis ex, ut imperdiet magna imperdiet at. Proin eget pulvinar lorem. Curabitur rhoncus vehicula libero, nec porttitor lectus. Fusce mattis eu leo id tempus. Donec in ultrices nisl. </p>',
+                        ),
+                    ),
+                );              
  
                 if ( file_exists( trailingslashit( dirname( __FILE__ ) ) . 'README.html' ) ) {
                     $tabs['docs'] = array(
