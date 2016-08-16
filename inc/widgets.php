@@ -13,6 +13,16 @@ function roman_cavalry_widgets_init() {
 		'after_widget'  => '</section>',
 		'before_title'  => '<div class="panel-heading"><h3 class="panel-title widget-title">',
 		'after_title'   => '</h3></div>',
+	), 
+                    
+        array(
+		'name'          => __( 'Contact', 'roman-cavalry' ),
+		'id'            => 'contact',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
 	) );
 }
 add_action( 'widgets_init', 'roman_cavalry_widgets_init' );
