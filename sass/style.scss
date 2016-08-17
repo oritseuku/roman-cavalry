@@ -21,6 +21,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
 @import "vars/variables-site";
+$icon-font-path: "./fonts";
+@import "bootstrap-compass";
 @import "bootstrap";
 
 $fa-font-path: "./fonts";
@@ -29,7 +31,9 @@ $fa-font-path: "./fonts";
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-## HTML Template - Diamond
+## HTML Template CSS
+    ## Diamond
+    ## Inventive
     ## Animate Custom
 # Accessibility
 # Alignments
@@ -47,7 +51,7 @@ $fa-font-path: "./fonts";
 @import "mixins/mixins-master";
 
 /*--------------------------------------------------------------
-# HTML Template - Diamond
+# HTML Template CSS
 --------------------------------------------------------------*/
 @import "html/main";
 

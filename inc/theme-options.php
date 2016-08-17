@@ -254,7 +254,10 @@
                                 'disabled'  => array(
                                     'threecolumn'   => 'Three Column',
                                     'twocolumn'     => 'Two Column',
-                                    'heropost'      => 'Hero Post',
+                                    'divider1'      => 'Divider 1',
+                                    'divider2'      => 'Divider 2',
+                                    'divider3'      => 'Divider 3',
+                                    'portfolio'     => 'Portfolio',
                                 ),
                             ),
                         ),
@@ -331,6 +334,68 @@
                             'id'        => 'two-column-right',
                             'default'   => '<p>Nunc dictum scelerisque semper. Sed accumsan scelerisque est, at consectetur nunc maximus at. Etiam convallis et quam sed elementum.</p>',
                             'type'      => 'editor',
+                        ),
+                        
+                        array( 
+                            'title'     => __( 'Divider 1 Content', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Text for Divider 1', 'roman_cavalry' ),
+                            'id'        => 'divider1-content',
+                            'default'   => '<h1>DESIGN CREATES EMOTIONAL CONNECTION</h1>
+                                            <hr>
+                                            <p>There’s more to design than meets the eye. It’s when it meets the heart that design creates a meaningful, lasting connection with the audience.</p>',
+                            'type'      => 'textarea',
+                        ),
+                        
+                        array( 
+                            'title'     => __( 'Divider 1', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Image for Divider 1', 'roman_cavalry' ),
+                            'id'        => 'divider1-img',
+                            'type'      => 'media',
+                            'url'      => true,
+                        ),
+                        
+                        array( 
+                            'title'     => __( 'Divider 2 Content', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Text for Divider 2', 'roman_cavalry' ),
+                            'id'        => 'divider2-content',
+                            'default'   => '<h1>DESIGN CREATES EMOTIONAL CONNECTION</h1>
+                                            <hr>
+                                            <p>There’s more to design than meets the eye. It’s when it meets the heart that design creates a meaningful, lasting connection with the audience.</p>',
+                            'type'      => 'textarea',
+                        ),
+                        
+                        array( 
+                            'title'     => __( 'Divider 2', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Image for Divider 2', 'roman_cavalry' ),
+                            'id'        => 'divider2-img',
+                            'type'      => 'media',
+                            'url'      => true,
+                        ),
+                        
+                        array( 
+                            'title'     => __( 'Divider 3 Content', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Text for Divider 3', 'roman_cavalry' ),
+                            'id'        => 'divider3-content',
+                            'default'   => '<h1>DESIGN CREATES EMOTIONAL CONNECTION</h1>
+                                            <hr>
+                                            <p>There’s more to design than meets the eye. It’s when it meets the heart that design creates a meaningful, lasting connection with the audience.</p>',
+                            'type'      => 'textarea',
+                        ),
+                        
+                        array( 
+                            'title'     => __( 'Divider 3', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Image for Divider 3', 'roman_cavalry' ),
+                            'id'        => 'divider3-img',
+                            'type'      => 'media',
+                            'url'      => true,
+                        ),
+                        
+                        array( 
+                            'title'     => __( 'Portfolio Title', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Title text for portfolio module', 'roman_cavalry' ),
+                            'id'        => 'portfolio-title',
+                            'default'   => 'Portfolio Title',
+                            'type'      => 'text',
                         ),
                     )
                 );
@@ -411,7 +476,8 @@
 						<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquam mattis ex, ut imperdiet magna imperdiet at. Proin eget pulvinar lorem. Curabitur rhoncus vehicula libero, nec porttitor lectus. Fusce mattis eu leo id tempus. Donec in ultrices nisl. </p>',
                         ),
                     ),
-                );              
+                );
+
  
                 if ( file_exists( trailingslashit( dirname( __FILE__ ) ) . 'README.html' ) ) {
                     $tabs['docs'] = array(

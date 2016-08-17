@@ -1,6 +1,6 @@
 <?php
 /**
- * File used for homepage hero content module
+ * File used for homepage service module
  *
  * @package WordPress
  */
