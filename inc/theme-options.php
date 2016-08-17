@@ -235,11 +235,112 @@
                 }
  
                 // ACTUAL DECLARATION OF SECTIONS
+ //Homepage                 
+                $this->sections[] = array(
+                    'icon'      => 'el-icon-home',
+                    'title'     => __('Homepage', 'roman_cavalry'),
+                    //'subsection' => true,
+                    'fields'    => array(
+                        array(
+                            'id'        => 'homepage-layout',
+                            'type'      => 'sorter',
+                            'title'     => __('Homepage Layout Manager', 'roman_cavalry'),
+                            'desc'      => __('Organize how you want the layout to appear on the homepage', 'roman_cavalry'),
+                            'options'   => array(
+                                'enabled'   => array(
+                                    'herocontent'   => 'Hero Content',
+                                    'service'       => 'Service',
+                                ),
+                                'disabled'  => array(
+                                    'threecolumn'   => 'Three Column',
+                                    'twocolumn'     => 'Two Column',
+                                    'heropost'      => 'Hero Post',
+                                ),
+                            ),
+                        ),
+                        
+                        array( 
+                            'title'     => __( 'Hero Banner Content', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Text for the banner title. Replace the icon with font from <a href="http://fontawesome.io/icons/" target="_blank">Font Awesome</a>.', 'roman_cavalry' ),
+                            'id'        => 'hero-banner-title',
+                            'default'   => '<h1><i class="fa fa-diamond"></i></h1>
+                                            <p>A Bootstrap 3 HTML/CSS Theme.</p>
+                                            <p>Exclusive for BootstrapWP.</p>',
+                            'type'      => 'textarea',
+                        ),
+                        
+                        array( 
+                            'title'     => __( 'Hero Banner Image', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Image for Hero Banner', 'roman_cavalry' ),
+                            'id'        => 'hero-banner-img',
+                            'type'      => 'media',
+                            'url'      => true,
+                        ),
+                        
+                        array( 
+                            'title'     => __( 'Three Column Title', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Title text for three column module', 'roman_cavalry' ),
+                            'id'        => 'three-column-title',
+                            'default'   => '<h1 class="centered">Three Column Title</h1>',
+                            'type'      => 'textarea',
+                        ),
+                        
+                        array( 
+                            'title'     => __( 'Three Column - Left', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Text for left column', 'roman_cavalry' ),
+                            'id'        => 'three-column-left',
+                            'default'   => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque rhoncus erat ac malesuada. Nam enim odio, pharetra vel mauris vestibulum, congue venenatis mi.</p>',
+                            'type'      => 'editor',
+                        ),
+                        
+                        array( 
+                            'title'     => __( 'Three Column - Center', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Text for center column', 'roman_cavalry' ),
+                            'id'        => 'three-column-center',
+                            'default'   => '<p>Proin congue ex purus, sed lacinia mauris vestibulum id. In odio dolor, imperdiet et lacus bibendum, imperdiet sollicitudin velit.</p>',
+                            'type'      => 'editor',
+                        ),
+                        
+                        array( 
+                            'title'     => __( 'Three Column - Right', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Text for right column', 'roman_cavalry' ),
+                            'id'        => 'three-column-right',
+                            'default'   => '<p>Nunc dictum scelerisque semper. Sed accumsan scelerisque est, at consectetur nunc maximus at. Etiam convallis et quam sed elementum.</p>',
+                            'type'      => 'editor',
+                        ),
+                        
+                        array( 
+                            'title'     => __( 'Two Column Title', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Title text for two column module', 'roman_cavalry' ),
+                            'id'        => 'two-column-title',
+                            'default'   => '<h1 class="centered">Two Column Title</h1>',
+                            'type'      => 'textarea',
+                        ),
+                        
+                        array( 
+                            'title'     => __( 'Two Column - Left', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Text for left column', 'roman_cavalry' ),
+                            'id'        => 'two-column-left',
+                            'default'   => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque rhoncus erat ac malesuada. Nam enim odio, pharetra vel mauris vestibulum, congue venenatis mi.</p>',
+                            'type'      => 'editor',
+                        ),
+                        
+                        array( 
+                            'title'     => __( 'Two Column - Right', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Text for right column', 'roman_cavalry' ),
+                            'id'        => 'two-column-right',
+                            'default'   => '<p>Nunc dictum scelerisque semper. Sed accumsan scelerisque est, at consectetur nunc maximus at. Etiam convallis et quam sed elementum.</p>',
+                            'type'      => 'editor',
+                        ),
+                    )
+                );
+                
  //Blog Section              
                 $this->sections[] = array(
-                    'icon'      => 'el-icon-photo',
+                    'icon'      => 'el-icon-file-edit',
                     'title'     => __('Blog', 'roman_cavalry'),
                     'fields'    => array(
+                        
                         array( 
                             'title'     => __( 'Blog Title', 'roman_cavalry' ),
                             'subtitle'  => __( 'Text for the banner title', 'roman_cavalry' ),
@@ -260,7 +361,7 @@
                 
  //Portfolio Section
                  $this->sections[] = array(
-                    'icon'      => 'el-icon-photo',
+                    'icon'      => 'el-icon-folder-open',
                     'title'     => __('Portfolio', 'roman_cavalry'),
                     'fields'    => array(
                         array( 
@@ -283,7 +384,7 @@
  
   //Service Section
                  $this->sections[] = array(
-                    'icon'      => 'el-icon-photo',
+                    'icon'      => 'el-icon-bulb',
                     'title'     => __('Service', 'roman_cavalry'),
                     'fields'    => array(
                         array( 

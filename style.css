@@ -8189,7 +8189,7 @@ a {
   margin-bottom: 40px; }
 
 .headerwrap {
-  background: url(../img/header_bg.jpg) no-repeat center top;
+  background: url("img/Chicago_1200x797.jpg") no-repeat center top;
   margin-top: -50px;
   padding-top: 120px;
   text-align: center;
@@ -8224,7 +8224,8 @@ a {
   border-bottom: 1px solid #ddd;
   text-align: center; }
   .greywrap .callout {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    min-height: 300px; }
   .greywrap p {
     margin-left: 30px;
     margin-right: 30px;
@@ -8904,6 +8905,20 @@ Services
 --------------------------------------------------------------*/
 .services {
   padding-top: 40px; }
+
+/*--------------------------------------------------------------
+Search
+--------------------------------------------------------------*/
+.search-highlight {
+  background: #FFFF00; }
+
+/*--------------------------------------------------------------
+Homepage 
+--------------------------------------------------------------*/
+.homehero .hentry {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0; }
 
 /*--------------------------------------------------------------
 # Media

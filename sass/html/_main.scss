@@ -255,7 +255,7 @@ a {
 }
 
 .headerwrap {
-  background: url(../img/header_bg.jpg) no-repeat center top;
+  background: url("img/Chicago_1200x797.jpg") no-repeat center top;
   margin-top: -50px;
   padding-top: 120px;
   text-align: center;
@@ -300,6 +300,7 @@ a {
   text-align: center;
   .callout {
     margin-bottom: 20px;
+      min-height: 300px;
   }
   p {
     margin-left: 30px;

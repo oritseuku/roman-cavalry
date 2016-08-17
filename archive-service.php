@@ -37,29 +37,41 @@ $bg_url = "background-image: url('" . $bg_img . "');";
 		<main id="main" class="site-main" role="main">
             <?php
             // the query
-			$the_query = new WP_Query( array('post_type' => 'service') ); ?>
+			$the_query = new WP_Query( array('post_type' => 'service') ); $counter = 0 ;?>
  
 			<?php if ( $the_query->have_posts() ) : ?>
  
-				<div class="row">
+
                     <div class="services">
                         
-                        <?php if (roman_cavalry_option('service-content') != '') {
-                            echo roman_cavalry_option('service-content');
-                        } ?>
+				        <div class="row">
+                        
+                            <?php if (roman_cavalry_option('service-content') != '') {
+                                echo roman_cavalry_option('service-content');
+                            } ?>
+                        
+                        </div> <!-- .row -->
  
+                    <div class="row">
+                        
 					<!-- the loop -->
 					<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                         
                     <?php get_template_part( 'template-parts/content', 'service' ); ?>
  
-
+                        <?php $counter++;
+                            if ($counter % 3 == 0) {
+                            echo '</div><div class="row">';
+                        } ?>
+                        
 					<?php endwhile; ?>
 					<!-- end of the loop -->
                         
+                    </div><!-- /row -->
+                        
                     </div><!-- #service-item -->
  
-				</div> <!-- .row -->
+
 				
  
 				<?php wp_reset_postdata(); ?>

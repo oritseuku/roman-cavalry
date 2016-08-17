@@ -157,3 +157,8 @@ require get_template_directory() . '/inc/meta-box.php';
  */
 require get_template_directory() . '/inc/roman-cavalry-options.php';
 require get_template_directory() . '/inc/theme-options.php';
+
+/**
+ * Search Results - Highlight.
+ */
+require get_template_directory() . '/inc/search-highlight.php';
