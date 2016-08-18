@@ -149,6 +149,31 @@
             }
  
             public function setSections() {
+                         
+                // Array of social options
+                $social_options = array(
+                    'twitter'       => 'Twitter',
+                    'facebook'      => 'Facebook',
+                    'vk'            => 'Vk',
+                    'google-plus'   => 'Google Plus',
+                    'instagram'     => 'Instagram',
+                    'linkedin'      => 'LinkedIn',
+                    'tumblr'        => 'Tumblr',
+                    'pinterest'     => 'Pinterest',
+                    'amazon'        => 'Amazon',
+                    'angellist'     => 'AngelList',
+                    'github'        => 'Github',
+                    'dribbble'      => 'Dribbble',
+                    'flickr'        => 'Flickr',
+                    'skype'         => 'Skype',
+                    'youtube'       => 'Youtube',
+                    'vimeo-square'  => 'Vimeo',
+                    'reddit'        => 'Reddit',
+                    'stumbleupon'   => 'Stumbleupon',
+                    'vine'          => 'Vine',
+                    'rss'           => 'RSS',
+                );
+
  
                 /**
                  * Used within different fields. Simply examples. Search for ACTUAL DECLARATION for field examples
@@ -235,7 +260,23 @@
                 }
  
                 // ACTUAL DECLARATION OF SECTIONS
- //Homepage                 
+ //Header                 
+//                $this->sections[] = array(
+//                    'icon'      => 'el-icon-website',
+//                    'title'     => __('Header', 'roman_cavalry'),
+//                    'fields'    => array(
+//                    array( 
+//                        'title'     => __( 'Logo', 'roman_cavalry' ),
+//                        'subtitle'  => __( 'Use this field to upload your custom logo for use in the theme header. (Recommend 200px x 40px)', 'roman_cavalry' ),
+//                        'id'        => 'custom-logo',
+//                        'default'   => '',
+//                        'type'      => 'media',
+//                        'url'       => true,
+//                    ),
+//                ),
+//            ),
+                        
+//Homepage                 
                 $this->sections[] = array(
                     'icon'      => 'el-icon-home',
                     'title'     => __('Homepage', 'roman_cavalry'),
@@ -270,6 +311,14 @@
                                             <p>A Bootstrap 3 HTML/CSS Theme.</p>
                                             <p>Exclusive for BootstrapWP.</p>',
                             'type'      => 'textarea',
+                        ),
+                        
+                        array( 
+                            'title'     => __( 'Hero Banner Social', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Add social media icons for hero banner', 'roman_cavalry' ),
+                            'id'        => 'hero-banner-social',
+                            'type'      => 'sortable',
+                            'options'   => $social_options,
                         ),
                         
                         array( 
@@ -495,8 +544,8 @@
                             'title'     => __( 'Social Media - Footer', 'roman_cavalry' ),
                             'subtitle'  => __( 'Add custom html for social media icons', 'roman_cavalry' ),
                             'id'        => 'footer-social',
-                            'default'   => 'Social media HTML',
-                            'type'      => 'editor',
+                            'type'      => 'sortable',
+                            'options'   => $social_options,
                         ),
                     ),
                 );

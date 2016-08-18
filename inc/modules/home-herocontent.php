@@ -21,5 +21,27 @@ $bg_url = "background-image: url('" . $bg_img . "');";
                 <?php if (roman_cavalry_option('hero-banner-title') != '') {
                     echo roman_cavalry_option('hero-banner-title');
                 } ?>
-	  		</header>	    
+
+	  		</header>
+        
+          <section class='connect'>
+            <div class='box connect-box'>
+				<!-- Social Links Section -->
+                <ul class='connect-icons'>
+                  <?php $social_options = roman_cavalry_option( 'hero-banner-social' ); ?>
+            <?php foreach ( $social_options as $key => $value ) {
+                if ( $value ) { ?>
+                    <li><a class="<?php echo $key; ?>" href="<?php echo $value; ?>" title="<?php echo $key; ?>" target="_blank">
+                        <i class="fa fa-<?php echo $key; ?>"></i></li>
+                    </a>
+                <?php }
+            } ?>
+
+
+            </ul>
+				<!-- Social Links Section End-->
+          </div>
+        </section>
+        
+        
 	    </div><!-- /headerwrap -->

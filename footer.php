@@ -27,9 +27,15 @@
           </div>
            <!-- SOCIAL ICONS -->
           <div class='col-md-6 col-sm-6 col-xs-12 footerRight'>
-                  <?php if (roman_cavalry_option('footer-social') != '') {
-                    echo roman_cavalry_option('footer-social');
-                } ?>
+
+              <?php $social_options = roman_cavalry_option( 'footer-social' ); ?>
+	                    <?php foreach ( $social_options as $key => $value ) {
+	                        if ( $value ) { ?>
+	                            <a href="<?php echo $value; ?>" title="<?php echo $key; ?>" target="_blank">
+	                                <i class="fa fa-<?php echo $key; ?>"></i>
+	                            </a>
+	                        <?php }
+	                    } ?>
           </div> <!-- .site-info -->
         </div>
 	</footer><!-- #colophon -->
