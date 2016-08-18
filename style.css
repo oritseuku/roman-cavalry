@@ -8873,6 +8873,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .connect-icons .angellist:hover {
   background: #000000; }
 
+.connect-icons .github:hover {
+  background: #000000; }
+
 /* 5. Section About
 -------------------------------------------------*/
 #sectionAbout {
@@ -9419,6 +9422,10 @@ img.wp-post-image {
 
 .footerLeft {
   text-align: left; }
+  .footerLeft a {
+    color: #fff; }
+    .footerLeft a:hover {
+      color: #ad0b22; }
 
 .footerRight {
   text-align: right;

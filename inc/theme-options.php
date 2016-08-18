@@ -477,7 +477,29 @@
                         ),
                     ),
                 );
-
+                
+ //Footer Section
+                 $this->sections[] = array(
+                    'icon'      => 'el-icon-website',
+                    'title'     => __('Footer', 'roman_cavalry'),
+                    'fields'    => array(
+                        array( 
+                            'title'     => __( 'Custom Copyright - Footer', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Add custom text/html for copyright ', 'roman_cavalry' ),
+                            'id'        => 'footer-copyright',
+                            'default'   => '<p>&#169; 2014-2016 Oritse Justin Uku. All rights reserved.</p>',
+                            'type'      => 'editor',
+                        ),
+                        
+                        array( 
+                            'title'     => __( 'Social Media - Footer', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Add custom html for social media icons', 'roman_cavalry' ),
+                            'id'        => 'footer-social',
+                            'default'   => 'Social media HTML',
+                            'type'      => 'editor',
+                        ),
+                    ),
+                );
  
                 if ( file_exists( trailingslashit( dirname( __FILE__ ) ) . 'README.html' ) ) {
                     $tabs['docs'] = array(

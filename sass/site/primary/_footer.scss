@@ -17,6 +17,14 @@
 
 .footerLeft {
     text-align: left;
+    
+    a {
+        color: #fff;
+        
+        &:hover {
+            color: $color__brand;
+        }
+    }
 }
 
 .footerRight {
@@ -35,4 +43,3 @@
         }
     }
 }
-
