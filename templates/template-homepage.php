@@ -2,7 +2,7 @@
 /**
  * @package WordPress
  * @subpackage Roman_Cavalry
- * Template Name: Homepage
+ * Template Name: Home Page
  */
 ?>
  

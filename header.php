@@ -35,8 +35,17 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
- 
-            <?php roman_cavalry_the_custom_logo(); ?>
+              
+            <?php $logo = roman_cavalry_option('custom-logo', false, 'url'); ?>
+            <?php $logotxt = roman_cavalry_option('logo-text'); ?>
+              
+            <?php if($logo !== '') { ?>
+                <a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><img src="<?php echo $logo ?>" alt="<?php bloginfo( 'name' ) ?>"</a>
+            <?php } elseif ($logotxt !== '') { ?>
+                <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php echo $logotxt ?></a>
+            <?php } else { ?>
+                <a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a>
+            <?php } ?>
              
           </div>
  

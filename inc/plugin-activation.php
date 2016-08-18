@@ -72,9 +72,9 @@ function roman_cavalry_register_required_plugins() {
             'required'           => true,
         ),
 		array(
-			'name'               => 'Roman Cavalry Portfolio Post Type', // The plugin name.
-			'slug'               => 'roman-cavalry-portfolio-post-type', // The plugin slug (typically the folder name).
-			'source'             => get_stylesheet_directory() . '/plugins/roman-cavalry-portfolio-post-type.zip', // The plugin source.
+			'name'               => 'Roman Cavalry Custom Post Type', // The plugin name.
+			'slug'               => 'roman-cavalry-custom-post-type', // The plugin slug (typically the folder name).
+			'source'             => get_stylesheet_directory() . '/plugins/roman-cavalry-custom-post-type.zip', // The plugin source.
 			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
 			'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
 			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.

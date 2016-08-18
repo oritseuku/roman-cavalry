@@ -261,20 +261,28 @@
  
                 // ACTUAL DECLARATION OF SECTIONS
  //Header                 
-//                $this->sections[] = array(
-//                    'icon'      => 'el-icon-website',
-//                    'title'     => __('Header', 'roman_cavalry'),
-//                    'fields'    => array(
-//                    array( 
-//                        'title'     => __( 'Logo', 'roman_cavalry' ),
-//                        'subtitle'  => __( 'Use this field to upload your custom logo for use in the theme header. (Recommend 200px x 40px)', 'roman_cavalry' ),
-//                        'id'        => 'custom-logo',
-//                        'default'   => '',
-//                        'type'      => 'media',
-//                        'url'       => true,
-//                    ),
-//                ),
-//            ),
+                $this->sections[] = array(
+                    'icon'      => 'el-icon-flag-alt',
+                    'title'     => __('Header', 'roman_cavalry'),
+                    'fields'    => array(
+                    array( 
+                        'title'     => __( 'Logo', 'roman_cavalry' ),
+                        'subtitle'  => __( 'Use this field to upload your custom logo for use in the theme header. (Recommend 200px x 40px)', 'roman_cavalry' ),
+                        'id'        => 'custom-logo',
+                        'default'   => '',
+                        'type'      => 'media',
+                        'url'       => true,
+                    ),
+                        
+                    array( 
+                        'title'     => __( 'Logo Text', 'roman_cavalry' ),
+                        'subtitle'  => __( 'Display custom logo text instead for use in the theme header.', 'roman_cavalry' ),
+                        'id'        => 'logo-text',
+                        'default'   => '',
+                        'type'      => 'text',
+                    ),
+                )
+            );
                         
 //Homepage                 
                 $this->sections[] = array(

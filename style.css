@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 Theme Name: Roman Cavalry
-Theme URI: http://underscores.me/
+Theme URI: http://oritseuku.com
 Author: Oritse Justin Uku
 Author URI: http://oritseuku.com
 Description: Description
@@ -8195,12 +8195,12 @@ a {
 
 .headerwrap {
   background: url("img/Chicago_1200x797.jpg") no-repeat center top;
-  margin-top: -50px;
+  margin-top: 0px;
   padding-top: 120px;
   text-align: center;
-  background-attachment: relative;
+  background-attachment: fixed;
   background-position: center center;
-  min-height: 650px;
+  min-height: 750px;
   width: 100%;
   background-size: 100%;
   background-size: cover; }
@@ -8415,13 +8415,13 @@ a {
   text-align: center;
   background-attachment: relative;
   background-position: center top;
-  min-height: 450px;
+  min-height: 400px;
   width: 100%;
   background-size: 100%;
   background-size: cover; }
   .pagewrap h1 {
     color: #ffffff;
-    margin-top: 135px;
+    margin-top: 75px;
     padding-bottom: 30px;
     letter-spacing: 8px;
     font-size: 40px;
@@ -8729,7 +8729,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   font-size: 60px;
   font-weight: 700;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  font-variant: small-caps;
   padding-bottom: 0px;
   line-height: 75px;
   margin-bottom: 0;
@@ -9388,6 +9388,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 img.wp-post-image {
   margin-bottom: 20px; }
+
+.red-panel {
+  background: #ad0b22; }
+
+.white-panel {
+  background: #fff; }
 
 /*--------------------------------------------------------------
 ## Comments
