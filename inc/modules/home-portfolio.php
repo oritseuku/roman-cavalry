@@ -11,7 +11,7 @@
 	
     <div class="row">
         <?php if (roman_cavalry_option('portfolio-title') != '') {
-                echo '<h1 class="centered">', roman_cavalry_option('portfolio-title'), '</h1><hr>';
+                echo '<h1 class="centered small-caps">', roman_cavalry_option('portfolio-title'), '</h1><hr>';
             } ?>
     </div><!-- /row -->
 
