@@ -13,10 +13,10 @@ function roman_cavalry_widgets_init() {
 		'after_widget'  => '</section>',
 		'before_title'  => '<div class="panel-heading"><h3 class="panel-title widget-title">',
 		'after_title'   => '</h3></div>',
-	), 
-                    
-        array(
-		'name'          => __( 'Contact', 'roman-cavalry' ),
+	),  );
+    
+    register_sidebar( array(
+		'name'          => __( 'Contact', 'bootstrapwp' ),
 		'id'            => 'contact',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
