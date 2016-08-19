@@ -2,10 +2,11 @@
 /*!
 Theme Name: Roman Cavalry
 Theme URI: http://oritseuku.com
+Github Theme URI: https://github.com/oritseuku/roman-cavalry
 Author: Oritse Justin Uku
 Author URI: http://oritseuku.com
-Description: Description
-Version: 1.0.0
+Description: A Bootstrap 3 Wordpress Theme
+Version: v1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: roman-cavalry
@@ -1087,10 +1088,10 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #ad0b22;
+  color: #666;
   text-decoration: none; }
   a:hover, a:focus {
-    color: lighten #ad0b22, 10%;
+    color: #ad0b22;
     text-decoration: underline; }
   a:focus {
     outline: 5px auto -webkit-focus-ring-color;
@@ -3053,7 +3054,7 @@ fieldset[disabled] a.btn {
     background-color: #fff; }
 
 .btn-link {
-  color: #ad0b22;
+  color: #666;
   font-weight: normal;
   border-radius: 0; }
   .btn-link, .btn-link:active, .btn-link.active, .btn-link[disabled],
@@ -3063,7 +3064,7 @@ fieldset[disabled] a.btn {
   .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
     border-color: transparent; }
   .btn-link:hover, .btn-link:focus {
-    color: lighten #ad0b22, 10%;
+    color: #ad0b22;
     text-decoration: underline;
     background-color: transparent; }
   .btn-link[disabled]:hover, .btn-link[disabled]:focus,
@@ -3560,7 +3561,7 @@ tbody.collapse.in {
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #eeeeee;
-    border-color: #ad0b22; }
+    border-color: #666; }
   .nav .nav-divider {
     height: 1px;
     margin: 9px 0;
@@ -4078,7 +4079,7 @@ tbody.collapse.in {
       padding: 6px 12px;
       line-height: 1.42857143;
       text-decoration: none;
-      color: #ad0b22;
+      color: #666;
       background-color: #fff;
       border: 1px solid #ddd;
       margin-left: -1px; }
@@ -4095,7 +4096,7 @@ tbody.collapse.in {
   .pagination > li > span:hover,
   .pagination > li > span:focus {
     z-index: 2;
-    color: lighten #ad0b22, 10%;
+    color: #ad0b22;
     background-color: #eeeeee;
     border-color: #ddd; }
   .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
@@ -4263,7 +4264,7 @@ a.label:hover, a.label:focus {
     padding: 1px 5px; }
   .list-group-item.active > .badge,
   .nav-pills > .active > a > .badge {
-    color: #ad0b22;
+    color: #666;
     background-color: #fff; }
   .list-group-item > .badge {
     float: right; }
@@ -4335,7 +4336,7 @@ a.badge:hover, a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #ad0b22; }
+  border-color: #666; }
 
 .alert {
   padding: 15px;
@@ -8167,12 +8168,12 @@ blockquote {
 
 /* Links */
 a {
-  color: #ad0b22;
+  color: #666;
   word-wrap: break-word;
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
   transition: color 0.1s ease-in, background 0.1s ease-in; }
   a:hover, a:focus {
-    color: lighten #ad0b22, 10%;
+    color: #ad0b22;
     text-decoration: none;
     outline: 0; }
   a:before, a:after {
@@ -8855,7 +8856,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .connect-icons .facebook:hover {
   background: #3b5998; }
 
-.connect-icons .gplus:hover {
+.connect-icons .google-plus:hover {
   background: #dd4b39; }
 
 .connect-icons .instagram:hover {
@@ -8944,8 +8945,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 /* 6. Section Resume
 -------------------------------------------------*/
 #sectionResume {
-  background: #fff;
-  min-height: 600px; }
+  background: #fff; }
   #sectionResume h2 {
     font-family: "Montserrat",sans-serif;
     font-size: 16px;
@@ -8981,8 +8981,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .resumeName {
   color: #666;
-  font-size: 16px;
-  text-transform: lowercase; }
+  font-size: 16px; }
 
 .resumeList p {
   font-size: 16px;
@@ -9466,6 +9465,9 @@ Portfolio
 .single-portfolio .hentry {
   border-bottom: 0; }
 
+.portfolio-featured img {
+  padding: 0 auto; }
+
 /*--------------------------------------------------------------
 Services
 --------------------------------------------------------------*/
@@ -9485,6 +9487,15 @@ Homepage
   border-bottom: 0;
   padding-bottom: 0;
   margin-bottom: 0; }
+
+/*--------------------------------------------------------------
+Column Pages 
+--------------------------------------------------------------*/
+.two-column {
+  background: #fff; }
+
+.three-column {
+  background: #ccc; }
 
 /*--------------------------------------------------------------
 # Media

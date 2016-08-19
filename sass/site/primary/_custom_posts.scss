@@ -25,6 +25,10 @@ Portfolio
 	border-bottom: 0;
 }
 
+.portfolio-featured img {
+    padding: 0 auto;
+}
+
 /*--------------------------------------------------------------
 Services
 --------------------------------------------------------------*/
@@ -48,3 +52,15 @@ Homepage
 	padding-bottom: 0;
 	margin-bottom: 0;
 }
+/*--------------------------------------------------------------
+Column Pages 
+--------------------------------------------------------------*/
+
+.two-column {
+    background: $color__background-body;
+}
+.three-column {
+    background: $color__background-hr;
+}
+
+ 

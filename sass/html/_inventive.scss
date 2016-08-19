@@ -202,7 +202,7 @@
   .facebook:hover {
     background: #3b5998;
   }
-  .gplus:hover {
+  .google-plus:hover {
     background: #dd4b39;
   }
   .instagram:hover {
@@ -309,7 +309,7 @@
 
 #sectionResume {
   background: $color__background-body;
-  min-height: 600px;
+//  min-height: 600px;
   h2 {
     font-family: "Montserrat",sans-serif;
     font-size: 16px;
@@ -354,7 +354,7 @@
 .resumeName {
   color: #666;
   font-size: 16px;
-  text-transform: lowercase;
+//  text-transform: lowercase;
 }
 
 .resumeList p {

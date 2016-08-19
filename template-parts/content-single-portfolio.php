@@ -46,7 +46,7 @@
             }
         ?>
         </div>
-        </div><! --/Carousel -->-->
+        </div><!-- /Carousel -->
     </div><!-- /portfolio-featured -->
 
 
