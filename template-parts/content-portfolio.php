@@ -9,7 +9,7 @@
 
 ?>
 <!-- PORTFOLIO ITEM -->
-<div class="col-sm-6 col-md-4">
+<div class="col-xs-12 col-md-6">
     <div class="grid mask portfolio">
         <figure>
             <?php the_post_thumbnail( 'full', array( 'class' => 'img-responsive' ) ); ?>

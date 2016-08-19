@@ -20,7 +20,7 @@
                 
             <?php
             // the query
-			$the_query = new WP_Query( array('post_type' => 'portfolio', 'posts_per_page' => 3) ); ?>
+			$the_query = new WP_Query( array('post_type' => 'portfolio', 'posts_per_page' => 4) ); ?>
  
 			<?php if ( $the_query->have_posts() ) : ?>
  
