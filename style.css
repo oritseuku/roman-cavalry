@@ -8974,10 +8974,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     margin-bottom: 60px; }
     .resumeList li h4 {
       font-size: 16px;
+      color: #ad0b22;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-family: "Montserrat",sans-serif;
       margin-bottom: 12px; }
+    .resumeList li i {
+      color: #555555; }
 
 .resumeName {
   color: #555555;
