@@ -454,6 +454,15 @@
                             'default'   => 'Portfolio Title',
                             'type'      => 'text',
                         ),
+                        
+                                                
+                        array( 
+                            'title'     => __( 'Service Title', 'roman_cavalry' ),
+                            'subtitle'  => __( 'Title text for service module', 'roman_cavalry' ),
+                            'id'        => 'service-title',
+                            'default'   => '<h1 class="centered">Services</h1>',
+                            'type'      => 'textarea',
+                        ),
                     )
                 );
                 

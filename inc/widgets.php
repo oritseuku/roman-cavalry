@@ -13,7 +13,7 @@ function roman_cavalry_widgets_init() {
 		'after_widget'  => '</section>',
 		'before_title'  => '<div class="panel-heading"><h3 class="panel-title widget-title">',
 		'after_title'   => '</h3></div>',
-	)  );
+	) );
     
     register_sidebar( array(
 		'name'          => __( 'Contact', 'bootstrapwp' ),
