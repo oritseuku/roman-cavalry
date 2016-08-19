@@ -9,7 +9,12 @@
 		<!-- ==== GREYWRAP ==== -->
 		<div class="greywrap">
 			<div class="container">
-			<div class="row">
+			
+            <?php if (roman_cavalry_option('service-title') != '') {
+                echo roman_cavalry_option('service-title');
+                } ?>
+                
+            <div class="row">
                 
             <?php
             // the query
