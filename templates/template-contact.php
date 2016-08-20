@@ -79,7 +79,7 @@ if (count($bg_img) > '0') {
 <div class="container">
 	<div class="row">
  
-	<div id="primary" class="col-md-9 col-lg-9">
+	<div id="primary" class="col-xs-12 col-md-7 col-lg-7">
 		<main id="main" class="site-main" role="main">
  
 			<?php while ( have_posts() ) : the_post(); ?>
