@@ -57,6 +57,11 @@ Homepage
 	padding-bottom: 0;
 	margin-bottom: 0;
 }
+
+.heritage {
+    color: $color__brand;
+    margin-bottom: 0;
+}
 /*--------------------------------------------------------------
 Column Pages 
 --------------------------------------------------------------*/
@@ -68,4 +73,127 @@ Column Pages
     background: $color__background-pre;
 }
 
- 
+/*--------------------------------------------------------------
+Landing Page - Full Width 
+--------------------------------------------------------------*/
+
+.landingFull {
+    min-height: 800px;
+    background-attachment: fixed !important;
+}
+
+.landingBox {
+    margin: 40px 0;
+    border: 2px solid $color__brand;
+    background: white;
+    padding: 20px 40px;
+    font-weight: 400;
+}
+
+.officiumTitle {
+    font-family: 'Ultra', 'Montserrat', serif;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.redText {
+    color: $color__brand;
+}
+.blackText {
+    color: #000;
+}
+.whiteText {
+    color: #fff;
+}
+.btn-officium {
+    margin-top: 20px;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.indent {
+    margin: 0 40px;
+}
+
+.landingLogo {
+    width: 100px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.landingTitle {
+    margin-top: 150px;
+}
+/*--------------------------------------------------------------
+Landing Page - Full Width 
+--------------------------------------------------------------*/
+
+#registration {
+    min-height: 700px;
+    margin-top: -100px;
+}
+#signup1 {
+    width: 100%;
+//    height: 70px;
+//    padding: 20px 20px;
+    margin-top: -60px;
+    font-size: 18px;
+    td {
+        padding: 15px 20px;
+        &:last-child {
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+    p {
+        display: inline-block;
+        margin: 0 0;
+    }
+}
+
+.btn-register {
+    display: inline-block;
+    margin: auto 20px;
+}
+
+.registrationAv {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border: 3px solid $color__brand;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.redStrong {
+    font-weight: bold;
+    color: $color__brand;
+}
+
+.officiumTitleBox {
+    width: 60vw;
+    text-align: left;
+    border-left: 5px solid $color__brand;
+    padding: 10px 0 5px 10px;
+    margin-top: 250px;
+    margin-left: 150px;
+}
+
+.fader {
+    background: rgba(255, 255, 255, 0.75);
+//    filter: alpha(opacity=60);
+    border: 1px solid $color__brand;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.registrationLogo {
+    width: 100px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 50px;
+}

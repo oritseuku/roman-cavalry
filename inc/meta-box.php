@@ -59,7 +59,7 @@ function roman_cavalry_register_meta_boxes( $meta_boxes )
 			// TEXTAREA
 			array(
 				'name' => esc_html__( 'Banner Text', 'your-prefix' ),
-				'desc' => esc_html__( 'This is the text that will display in the banner', 'your-prefix' ),
+				'desc' => esc_html__( 'This is the text that will display in the banner. Include HTML markup, if Registration template.', 'your-prefix' ),
 				'id'   => "{$prefix}banner_text",
 				'type' => 'textarea',
 				'cols' => 20,

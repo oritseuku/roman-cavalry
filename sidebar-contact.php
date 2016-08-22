@@ -10,7 +10,7 @@ if ( ! is_active_sidebar( 'contact' ) ) {
 }
 ?>
  
-<div id="secondary" class="widget-area col-md-5 col-lg-5 col-xs-12" role="complementary">
+<div id="secondary" class="widget-area col-md-5 col-md-offset-1 col-lg-3 col-lg-offset-2 col-xs-12" role="complementary">
 
 		<?php dynamic_sidebar( 'contact' ); ?>
 
