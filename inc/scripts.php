@@ -10,6 +10,8 @@ function roman_cavalry_scripts() {
     wp_enqueue_style( 'google-body', '//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic');
     
     wp_enqueue_style( 'google-font', '//fonts.googleapis.com/css?family=Ultra');
+    
+    wp_enqueue_style( 'google-header', '//fonts.googleapis.com/css?family=Homemade+Apple');
 
     wp_enqueue_script( 'modernizr-js', get_template_directory_uri() . '/js/modernizr.custom.js', array('jquery'), '2.6.2', false );
     
